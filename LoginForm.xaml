@@ -1,0 +1,21 @@
+﻿<Window x:Name="LoginForm1" x:Class="Subscriber.LoginForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Subscriber"
+        mc:Ignorable="d"
+        Title="Authorization" Height="150" Width="260" WindowStyle="ToolWindow" KeyDown="LoginForm_KeyDown" Closed="LoginForm1_Closed">
+    <Grid Margin="0,0,-19,-16">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="279*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="logLabel" Content="Login" HorizontalAlignment="Left" Margin="16,14,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.021,-2.957"/>
+        <Label x:Name="passwordLabel" Content="Password" HorizontalAlignment="Left" Margin="16,46,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.316,-4.475"/>
+        <TextBox x:Name="logTextBox" HorizontalAlignment="Left" Margin="82,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132"/>
+        <TextBox x:Name="passwordTextBox" HorizontalAlignment="Left" Margin="82,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132"/>
+        <Button x:Name="okButton" Content="Login" HorizontalAlignment="Left" Margin="175,75,0,0" VerticalAlignment="Top" Width="39" Click="okButton_Click"/>
+
+    </Grid>
+</Window>
